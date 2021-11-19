@@ -1,22 +1,24 @@
 ﻿@page "/"
 
 <PageTitle>Index</PageTitle>
-<div class="bg-image">
 
-<MudPaper Width="100%" Height="50rem" Class="d-flex align-content-center flex-wrap" Style="background-color: transparent;">
-    <MudContainer>
-        <MudPaper MaxHeight="400px" MaxWidth="300px" Class="m-auto" Style="background-color: white">
-            <MudCard>
-                <MudCardHeader>
-                    <CardHeaderContent>
-                        <MudText Typo="Typo.h6">Simulator</MudText>
-                    </CardHeaderContent>
-                </MudCardHeader>
-                <MudCardContent>
-                    <MudSlider Value="70" Min="0" Max="100">Volume</MudSlider>
-                </MudCardContent>
-            </MudCard>
-        </MudPaper>
-    </MudContainer>
+<MudPaper Width="100%" Height="50rem" Class="d-flex align-content-center flex-wrap">
+    <div class="bg-image">
+        <div class="center-item">
+
+            <MudPaper MaxHeight="400px" MaxWidth="300px">
+                <MudCard>
+                    <MudCardHeader>
+                        <CardHeaderContent>
+                            <MudText Typo="Typo.h6">Simulator</MudText>
+                        </CardHeaderContent>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <MudSlider Step="2" Value="70" Min="0" Max="100" Style="width:15rem;">Volume</MudSlider>
+                    </MudCardContent>
+                </MudCard>
+            </MudPaper>
+
+        </div>
+    </div>
 </MudPaper>
-</div>
